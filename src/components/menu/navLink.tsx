@@ -41,7 +41,13 @@ const NavLink = ({ label, to }: any) => {
           opacity: isActive ? 1 : 0,
         }}
       >
-        <Text fontWeight={500} fontSize="22" position="relative" zIndex={1}>
+        <Text
+          color={useColorModeValue("brand.blue", "white")}
+          fontWeight={500}
+          fontSize="22"
+          position="relative"
+          zIndex={1}
+        >
           {label}
         </Text>
       </Box>

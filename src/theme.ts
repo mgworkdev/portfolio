@@ -24,6 +24,14 @@ const theme = extendTheme({
         }),
       },
     },
+    Heading: {
+      baseStyle: (props: StyleFunctionProps) => ({
+        fontFamily: "Roboto Flex, sans-serif",
+        fontWeight: 500,
+        color: mode("brand.blue", "brand.blue")(props),
+        marginBottom: "10px",
+      }),
+    },
   },
   styles: {
     global: (props: StyleFunctionProps) => ({
@@ -32,7 +40,6 @@ const theme = extendTheme({
         fontWeight: 300,
         color: mode("brand.dark", "brand.light")(props),
         bg: mode("brand.light", "brand.dark")(props),
-        lineHeight: "base",
       },
     }),
   },

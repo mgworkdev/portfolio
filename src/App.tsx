@@ -1,4 +1,4 @@
-import { ChakraProvider, Box, HStack, Show } from "@chakra-ui/react";
+import { ChakraProvider, Box, Flex, Show } from "@chakra-ui/react";
 import { ColorModeSwitcher } from "./ColorModeSwitcher";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { WorkHistory } from "./layouts";
@@ -8,16 +8,14 @@ import theme from "./theme";
 export const App = () => (
   <ChakraProvider theme={theme}>
     <ColorModeSwitcher position={"absolute"} right="0" margin="5px" />
-    <HStack>
+    <Flex>
       <BrowserRouter>
         <Show above="md">
-          <Box flex="1" height="100vh">
-            <Sidebar>
-              <Menu />
-            </Sidebar>
-          </Box>
+          <Sidebar>
+            <Menu />
+          </Sidebar>
         </Show>
-        <Box flex="2">
+        <Box flex="1">
           <Routes>
             <Route path="/" element={<WorkHistory />}>
               <Route path="code-demos" element={<></>} />
@@ -25,6 +23,6 @@ export const App = () => (
           </Routes>
         </Box>
       </BrowserRouter>
-    </HStack>
+    </Flex>
   </ChakraProvider>
 );

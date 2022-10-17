@@ -1,0 +1,32 @@
+{
+  "name": "Mike Goldberg",
+  "summary": "Experienced full-stack developer. I've worked on greenfield projects for leading companies such as Samsung, ServiceNow, and The Daily. I've worked in advertising, news media, product development, streaming video, and enterprise software. I've worked individually, or on agile/cross-functional teams, to complete websites, web apps, and prototypes.",
+  "roles": [
+    {
+      "title": "Web Developer",
+      "company": "Independent Contractor",
+      "start": 1444453200000,
+      "end": 1465534800000,
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.",
+      "achievements": [
+        "consectetur adipiscing elit ultrices gravida",
+        "consectetur adipiscing elit ultrices gravida",
+        "consectetur adipiscing elit ultrices gravida"
+      ],
+      "skillset": ["Java", "JavaScript", "React"]
+    },
+    {
+      "title": "Web Developer",
+      "company": "Independent Contractor",
+      "start": 142453200000,
+      "end": 1435534800000,
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.",
+      "achievements": [
+        "consectetur adipiscing elit ultrices gravida",
+        "consectetur adipiscing elit ultrices gravida",
+        "consectetur adipiscing elit ultrices gravida"
+      ],
+      "skillset": ["Java", "JavaScript", "React"]
+    }
+  ]
+}
