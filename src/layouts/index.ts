@@ -1,3 +1,4 @@
-import WorkHistory from "./work-history";
+import Resume from "./resume";
+import CodeExamples from "./code-examples";
 
-export { WorkHistory };
+export { Resume, CodeExamples };

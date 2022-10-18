@@ -13,27 +13,20 @@ import {
   AiFillGithub,
   AiOutlineMail,
 } from "react-icons/ai";
+import { SidebarProps } from "../../types";
 
-type Props = {
-  children: JSX.Element;
-};
-
-const Sidebar = ({ children }: Props) => {
+const Sidebar = ({ children }: SidebarProps) => {
   return (
-    <Box
-      minHeight="100vh"
-      backgroundColor={useColorModeValue("brand.lightBlue", "brand.blue")}
-    >
+    <Box width={["280px", "280px", "280px", "350px", "350px"]}>
       <VStack
-        spacing="40px"
-        padding={[
-          "30px",
-          "30px",
-          "60px 10px 0 40px",
-          "60px 10px 0 40px",
-          "80px",
-        ]}
+        spacing="30px"
+        padding={["30px", "30px", "60px 10px 0 40px", "80px", "80px"]}
+        width={["280px", "280px", "280px", "350px", "350px"]}
         alignItems="flex-start"
+        position={"fixed"}
+        height="100%"
+        overflow={"auto"}
+        backgroundColor={useColorModeValue("brand.lightBlue", "brand.blue")}
       >
         <Box>
           <Link href="/" _hover={{ underline: "none" }}>
@@ -71,7 +64,9 @@ const Sidebar = ({ children }: Props) => {
             </Link>
           </Tooltip>
         </HStack>
-        <Box paddingTop="60px">{children}</Box>
+        <Box paddingTop={["10px", "10px", "10px", "40px", "40px"]}>
+          {children}
+        </Box>
       </VStack>
     </Box>
   );

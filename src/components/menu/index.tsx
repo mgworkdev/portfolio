@@ -1,11 +1,12 @@
 import { VStack } from "@chakra-ui/react";
-import NavLink from "./navLink";
+import NavLink from "./nav-link";
 
 const Menu = () => {
   return (
     <VStack gap="5px">
       <NavLink label={"Resume"} to={"/"} />
-      <NavLink label={"Work Examples"} to={"/work-examples"} />
+      <NavLink label={"Code Examples"} to={"/code-examples"} />
+      <NavLink label={"Projects"} to={"/projects"} />
     </VStack>
   );
 };

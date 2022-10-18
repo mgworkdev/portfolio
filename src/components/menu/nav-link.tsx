@@ -12,7 +12,7 @@ const NavLink = ({ label, to }: any) => {
     <ReactRouterNavLink to={to}>
       <Box
         padding="15px 60px"
-        width="300px"
+        width="280px"
         position="relative"
         marginLeft="-60px"
         _after={{
