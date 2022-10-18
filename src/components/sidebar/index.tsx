@@ -25,7 +25,8 @@ const Sidebar = ({ children }: SidebarProps) => {
         alignItems="flex-start"
         position={"fixed"}
         height="100%"
-        overflow={"auto"}
+        overflowY={"auto"}
+        overflowX={"hidden"}
         backgroundColor={useColorModeValue("brand.lightBlue", "brand.blue")}
       >
         <Box>

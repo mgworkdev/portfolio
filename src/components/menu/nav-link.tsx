@@ -14,7 +14,8 @@ const NavLink = ({ label, to }: any) => {
         padding="15px 60px"
         width="280px"
         position="relative"
-        marginLeft="-60px"
+        // border="1px solid red"
+        left="-60px"
         _after={{
           content: "' '",
           borderWidth: "1px 0",

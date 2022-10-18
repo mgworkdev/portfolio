@@ -78,6 +78,7 @@ const Role = ({
       <Box padding="10px 0">
         {skillset.map((tag) => (
           <Tag
+            key={tag}
             size="md"
             marginRight="10px"
             backgroundColor={colors.tag.background}

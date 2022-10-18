@@ -1,12 +1,4 @@
-import {
-  Box,
-  Text,
-  Heading,
-  useColorModeValue,
-  Grid,
-  GridItem,
-  AspectRatio,
-} from "@chakra-ui/react";
+import { Box, Text, Heading, useColorModeValue, Grid } from "@chakra-ui/react";
 import { CodeGridItem } from "../../components";
 
 const CodeExamples = () => {
@@ -16,7 +8,7 @@ const CodeExamples = () => {
   );
 
   return (
-    <Box padding={["60px", "60px", "60px", "60px", "80px 90px"]}>
+    <Box padding={["60px", "60px", "60px", "80px 90px", "80px 90px"]}>
       <Heading as={"h2"}>{"Code Examples"}</Heading>
       <Text margin="20px 0 60px" color={summaryTextColor}>
         {
@@ -30,12 +22,21 @@ const CodeExamples = () => {
         templateColumns="repeat(2, 1fr)"
         gap="40px"
       >
-        <CodeGridItem title={"Drawing and Chat using WebRTC"} poster={""} />
+        <CodeGridItem
+          title={"Drawing and Chat using WebRTC"}
+          poster={""}
+          onClick={() => console.log("ouch")}
+        />
         <CodeGridItem
           title={"World Weather Globe using Three.js"}
           poster={""}
+          onClick={() => console.log("ouch")}
         />
-        <CodeGridItem title={"AR Face Mask using Tensorflow"} poster={""} />
+        <CodeGridItem
+          title={"AR Face Mask using Tensorflow"}
+          poster={""}
+          onClick={() => console.log("ouch")}
+        />
       </Grid>
     </Box>
   );
