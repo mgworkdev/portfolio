@@ -7,7 +7,7 @@ import theme from "./theme";
 
 export const App = () => (
   <ChakraProvider theme={theme}>
-    <ColorModeSwitcher position={"absolute"} right="0" margin="5px" />
+    <ColorModeSwitcher position={"absolute"} right="0" margin="10px 20px" />
     <Flex>
       <BrowserRouter>
         <Show above="md">

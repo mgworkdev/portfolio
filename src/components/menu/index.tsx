@@ -4,8 +4,8 @@ import NavLink from "./navLink";
 const Menu = () => {
   return (
     <VStack gap="5px">
-      <NavLink label={"Work History"} to={"/"} />
-      <NavLink label={"Code Examples"} to={"/code-examples"} />
+      <NavLink label={"Resume"} to={"/"} />
+      <NavLink label={"Work Examples"} to={"/work-examples"} />
     </VStack>
   );
 };

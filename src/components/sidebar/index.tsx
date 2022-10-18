@@ -7,7 +7,12 @@ import {
   Link,
   Tooltip,
 } from "@chakra-ui/react";
-import { AiFillLinkedin, AiFillGithub, AiOutlineMail } from "react-icons/ai";
+import {
+  AiFillMediumSquare,
+  AiFillLinkedin,
+  AiFillGithub,
+  AiOutlineMail,
+} from "react-icons/ai";
 
 type Props = {
   children: JSX.Element;
@@ -16,7 +21,7 @@ type Props = {
 const Sidebar = ({ children }: Props) => {
   return (
     <Box
-      height="100vh"
+      minHeight="100vh"
       backgroundColor={useColorModeValue("brand.lightBlue", "brand.blue")}
     >
       <VStack
@@ -24,8 +29,8 @@ const Sidebar = ({ children }: Props) => {
         padding={[
           "30px",
           "30px",
-          "80px 10px 0 40px",
-          "80px 10px 0 40px",
+          "60px 10px 0 40px",
+          "60px 10px 0 40px",
           "80px",
         ]}
         alignItems="flex-start"
@@ -51,12 +56,17 @@ const Sidebar = ({ children }: Props) => {
             </Link>
           </Tooltip>
           <Tooltip label="Github Code">
-            <Link>
+            <Link href="#">
               <AiFillGithub size={"26"} />
             </Link>
           </Tooltip>
+          <Tooltip label="Medium Blog">
+            <Link href="#">
+              <AiFillMediumSquare size={"26"} />
+            </Link>
+          </Tooltip>
           <Tooltip label="Email">
-            <Link>
+            <Link href="#">
               <AiOutlineMail size={"26"} />
             </Link>
           </Tooltip>
